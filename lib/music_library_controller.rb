@@ -25,7 +25,7 @@ class MusicLibraryController
     @library.sort { |song_a, song_b| 
       song_a.name <=> song_b.name
     }.each { |song| 
-      puts "1. #{song.name} - #{song.artist.name} - #{song.genre.name}" 
+      puts "1. #{song.artist.name} - #{song.name} - #{song.genre.name}" 
     }
   end
   
