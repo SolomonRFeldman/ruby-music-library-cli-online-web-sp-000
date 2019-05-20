@@ -9,4 +9,8 @@ class MusicImporter
     Dir["#{path}/*mp3"].collect{ |path| path.split("/").last }
   end
   
+  def import
+    
+  end
+  
 end
