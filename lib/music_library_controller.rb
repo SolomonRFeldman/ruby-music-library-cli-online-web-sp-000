@@ -42,7 +42,7 @@ class MusicLibraryController
     # }
     Artist.all.sort { |song_a, song_b| 
       song_a.name <=> song_b.name
-    }.each { |song|
+    }.each { |artist|
       song_count += 1
       puts "#{song_count}. #{artist.name}"
     }
