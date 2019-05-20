@@ -22,10 +22,12 @@ class MusicLibraryController
   end
   
   def list_songs
+    song_count = 0
     @library.sort { |song_a, song_b| 
       song_a.name <=> song_b.name
-    }.each { |song| 
-      puts "1. #{song.artist.name} - #{song.name} - #{song.genre.name}" 
+    }.each { |song|
+      song_count += 1
+      puts "#{song_count}. #{song.artist.name} - #{song.name} - #{song.genre.name}" 
     }
   end
   
