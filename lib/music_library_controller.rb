@@ -64,4 +64,6 @@ class MusicLibraryController
     } unless artist == nil
   end
   
+  def list_songs_by_genre
+  
 end
