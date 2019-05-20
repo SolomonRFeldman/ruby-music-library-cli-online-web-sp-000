@@ -14,6 +14,7 @@ class Song
   
   def save
     @@all << self
+    self
   end
   
   def artist=(artist)
@@ -31,8 +32,7 @@ class Song
   end
   
   def self.create(name, artist = nil)
-    @@all << new(name, artist)
-    @@all.last
+    new(name, artist).save
   end
   
   def self.all
