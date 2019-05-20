@@ -20,7 +20,7 @@ class Song
   def artist=(artist)
     @artist = artist
     if artist != nil
-      @artist.add_song(self)
+      artist.add_song(self)
     end
   end
   
@@ -37,8 +37,8 @@ class Song
   
   def self.new_from_filename(filename)
     fileinfo = filename.gsub(/.mp3/, "").split(" - ")
-    artist = find_or_create_by_name(fileinfo[0])
-    genre = find_or_create_by_name(fileinfo[2])
+    artist = Artist.find_or_create_by_name(fileinfo[0])
+    genre = Genre.find_or_create_by_name(fileinfo[2])
     find_by_name(fileinfo[1]) || create(fileinfo[1], artist, genre)
   end
   
