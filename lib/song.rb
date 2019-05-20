@@ -36,7 +36,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    fileinfo = filename.delete("split(" - ")
+    fileinfo = filename.delete(//split(" - ")
   end
   
   def self.all
