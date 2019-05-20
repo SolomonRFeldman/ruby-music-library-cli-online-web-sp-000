@@ -13,6 +13,7 @@ class Genre
   
   def save
     @@all << self
+    self
   end
   
   def add_song(song)
@@ -29,8 +30,7 @@ class Genre
   end
   
   def self.create(name)
-    @@all << new(name)
-    @@all.last
+    new(name).save
   end
   
   def self.all
