@@ -36,7 +36,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    fileinfo = filename.delete(/".mp3"/).split(" - ")
+    fileinfo = filename.delete(/.mp3/).split(" - ")
     new(fileinfo[1], fileinfo[0], fileinfo[2])
   end
   
