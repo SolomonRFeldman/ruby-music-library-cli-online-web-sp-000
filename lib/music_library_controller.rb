@@ -35,7 +35,8 @@ class MusicLibraryController
   def list_artists
     song_count = 0
     binding.pry
-    @library.sort { |song_a, song_b|
+    @library.uniq { |song| song.artist 
+    }.sort { |song_a, song_b|
       song_a.artist.name <=> song_b.artist.name
     }.each { |song|
       song_count += 1
