@@ -32,7 +32,7 @@ class MusicLibraryController
   end
   
   def list_artists
-    @library.Artist.all
+    @library.sort { |song
   end
   
 end
