@@ -77,4 +77,7 @@ class MusicLibraryController
     } unless genre == nil
   end
   
+  def play_song
+    puts ""
+  
 end
