@@ -32,7 +32,7 @@ class Song
   end
   
   def self.create(name, artist = nil, genre = nil)
-    new(name, artist).save
+    new(name, artist, genre).save
   end
   
   def self.all
