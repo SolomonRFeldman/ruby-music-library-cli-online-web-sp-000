@@ -22,7 +22,7 @@ class MusicLibraryController
   end
   
   def list_songs
-    @library.each { |song| puts song.name }
+    @library.each { |song| puts "1. #{song.name} - #{song.artist} - #{song.genre}" }
   end
   
 end
