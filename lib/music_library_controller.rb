@@ -19,5 +19,6 @@ class MusicLibraryController
       puts "What would you like to do?"
       gets command
     end
+  end
   
 end
