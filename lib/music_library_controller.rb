@@ -80,5 +80,10 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_number = gets
+    if song_number > 0 && song_number < Song.all.count
+      song = Song.all.sort { |song_a, song_b| 
+        song_a.name <=> song_b.name
+      }[song_number - 1]
+      
     
 end
