@@ -45,7 +45,8 @@ class Song
   end
   
   def self.create_from_filename(filename)
-    new_from_filename(filename).save
+    song = new_from_filename(filename)
+    song.save unless song == nil
   end
   
   def self.all
