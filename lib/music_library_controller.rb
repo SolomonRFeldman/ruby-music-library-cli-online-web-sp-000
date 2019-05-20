@@ -32,7 +32,9 @@ class MusicLibraryController
   end
   
   def list_artists
-    @library.sort { |song
+    @library.sort { |song_a, song_b| 
+      song_a.name <=> song_b.name
+    }
   end
   
 end
