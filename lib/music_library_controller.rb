@@ -45,9 +45,9 @@ class MusicLibraryController
     genre_count = 0
     Genre.all.sort { |genre_a, genre_b| 
       genre_a.name <=> genre_b.name
-    }.each { |artist|
-      artist_count += 1
-      puts "#{artist_count}. #{genre.name}"
+    }.each { |genre|
+      genre_count += 1
+      puts "#{genre_count}. #{genre.name}"
     }
   end
   
