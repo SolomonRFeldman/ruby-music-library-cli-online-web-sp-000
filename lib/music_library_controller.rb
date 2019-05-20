@@ -1,3 +1,4 @@
+require 'pry'
 class MusicLibraryController
   
   def initialize(path = './db/mp3s')
@@ -39,6 +40,7 @@ class MusicLibraryController
       song_count += 1
       puts "#{song_count}. #{song.artist.name}" 
     }
+    binding.pry
   end
   
 end
