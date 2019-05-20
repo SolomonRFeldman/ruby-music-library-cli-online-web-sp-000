@@ -20,7 +20,7 @@ class MusicLibraryController
       command = gets
       if command == "list songs"
         list_songs
-      elsif command == "list_artists"
+      elsif command == "list artists"
         list_artists
       elsif command == "list genres"
         list genres
