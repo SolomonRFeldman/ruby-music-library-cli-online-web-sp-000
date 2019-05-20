@@ -35,6 +35,9 @@ class Song
     new(name, artist, genre).save
   end
   
+  def self.new_from_filename(filename)
+    
+  
   def self.all
     @@all
   end
