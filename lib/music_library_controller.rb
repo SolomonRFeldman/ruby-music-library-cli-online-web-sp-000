@@ -74,7 +74,7 @@ class MusicLibraryController
     }.each { |song|
       song_count += 1
       puts "#{song_count}. #{song.name} - #{song.artist.name}" 
-    } unless artist == nil
+    } unless genre == nil
   end
   
 end
