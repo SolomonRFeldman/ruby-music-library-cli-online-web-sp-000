@@ -32,18 +32,11 @@ class MusicLibraryController
   end
   
   def list_artists
-    song_count = 0
-    # Song.all.uniq { |song| song.artist 
-    # }.sort { |song_a, song_b|
-    #   song_a.artist.name <=> song_b.artist.name
-    # }.each { |song|
-    #   song_count += 1
-    #   puts "#{song_count}. #{song.artist.name}" 
-    # }
-    Artist.all.sort { |song_a, song_b| 
-      song_a.name <=> song_b.name
+    artist_count = 0
+    Artist.all.sort { |artist_a, artist_b| 
+      artist_a.name <=> artist_b.name
     }.each { |artist|
-      song_count += 1
+      artist_count += 1
       puts "#{song_count}. #{artist.name}"
     }
   end
