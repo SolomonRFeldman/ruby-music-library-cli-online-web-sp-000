@@ -21,7 +21,7 @@ class MusicLibraryController
       elsif command == 'list artists'
         list_artists
       elsif command == 'list genres'
-        list genres
+        list_genres
       elsif command == 'list artist'
         list_songs_by_artist
       elsif command == 'list genre'
