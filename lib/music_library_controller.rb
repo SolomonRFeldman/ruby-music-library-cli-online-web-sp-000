@@ -1,7 +1,7 @@
 class MusicLibraryController
   
   def initialize(path = './db/mp3s')
-    @library = MusicImporter.new(path).import
+    MusicImporter.new(path).import
   end
   
   def call
@@ -23,7 +23,7 @@ class MusicLibraryController
   
   def list_songs
     song_count = 0
-    @library.sort { |song_a, song_b| 
+    Song.all.sort { |song_a, song_b| 
       song_a.name <=> song_b.name
     }.each { |song|
       song_count += 1
