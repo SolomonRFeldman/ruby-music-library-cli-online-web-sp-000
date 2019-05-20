@@ -36,7 +36,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    
+    fileinfo = filename.split(" - ")
   end
   
   def self.all
