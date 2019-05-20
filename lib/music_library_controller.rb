@@ -37,7 +37,7 @@ class MusicLibraryController
       artist_a.name <=> artist_b.name
     }.each { |artist|
       artist_count += 1
-      puts "#{song_count}. #{artist.name}"
+      puts "#{artist_count}. #{artist.name}"
     }
   end
   
