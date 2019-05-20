@@ -30,6 +30,7 @@ class MusicLibraryController
         list_songs_by_genre
       elsif command == "play song"
         play_song
+      end
     end
   end
   
