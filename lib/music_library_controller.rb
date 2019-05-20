@@ -16,7 +16,6 @@ class MusicLibraryController
     command = ""
     while command != "exit"
       puts "What would you like to do?"
-      command = gets
       if command == 'list songs'
         list_songs
       elsif command == 'list artists'
@@ -30,6 +29,7 @@ class MusicLibraryController
       elsif command == 'play song'
         play_song
       end
+      command = gets
     end
   end
   
